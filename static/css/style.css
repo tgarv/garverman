@@ -1,0 +1,99 @@
+/* https://coolors.co/app/d3f8e2-e4c1f9-f694c1-ede7b1-a9def9 */
+
+.background {
+    background: url("../images/xv.png");
+    background-size: 10%;
+}
+
+.main_image {
+    box-shadow: 8px 8px 10px #aaa;
+    border: 4px double #AAA;
+}
+
+@media all and (orientation:portrait) {
+	.main_image {
+		content: url("../images/main_portrait.jpg");
+	}
+}
+@media all and (orientation:landscape) {
+	.main_image {
+		content: url("../images/main_landscape.jpg");
+	}
+}
+
+.fl {
+    float: left;
+}
+
+.center_text {
+    text-align: center;
+}
+
+.body_contain {
+    /*background: url(subtle_white_mini_waves.png);*/
+    height: 100vh;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    /*border-radius: 20px;*/
+    /*border: 1px solid gray;*/
+}
+
+.hero_wrapper {
+    /*height: 20vh;*/
+    text-align: left;
+    padding-left: 20%;
+}
+
+.hero {
+    font-size: 5em;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.circle_container {
+    margin: 0 auto;
+    height: 20%;
+}
+
+/* Colors */
+.pastel_green {
+    background-color: #C8EDA6;
+}
+
+.pastel_lavender {
+    background-color: #E4C1F9;
+}
+
+.pastel_pink {
+    background-color: #F4A1C8;
+}
+
+.pastel_yellow {
+    background-color: #FFFFA8;
+}
+
+.pastel_blue {
+    background-color: #A9DEF9;
+}
+
+.light_lavender {
+    background-color: #E4C1F9;
+}
+
+.ivory {
+    /*background-color: #FFFFF0;*/
+    /*background: url(ivory_texture.png);*/
+    /*background-color: #E9E4E1;*/
+}
+
+.background_color {
+    background-color: #CFEBF9;
+    /*background-image: url(park.jpg);*/
+    /*background-size: cover;*/
+}
+
+.white_text {
+    color: white;
+}
