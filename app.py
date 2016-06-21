@@ -8,10 +8,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/v2')
-def index2():
-    return render_template('index2.html')
-
 @app.route('/rsvp')
 def rsvp():
     return render_template('rsvp.html')
