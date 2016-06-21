@@ -1,0 +1,77 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rebecca and Tom</title>
+</head>
+
+<body class="background">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- http://getskeleton.com/ -->
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/skeleton.css') }}">-->
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/normalize.css') }}">-->
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/flipclock.css') }}">
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/flipclock.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <div class="container">
+        <div class="row hidden-xs">
+            <img src="{{ url_for('static', filename='images/gray-elephant-hi.png') }}" width="100px" class="fl inline-block elephant">
+            <div class="heading_container inline-block">
+                <h2 class="heading"><a class="no_link" href="/">Rebecca & Tom</a></h2>
+                <h2 class="heading fr">May 6, 2017</h2>
+            </div>
+            <img src="{{ url_for('static', filename='images/elephant-left.png') }}" width="100px" class="fr inline-block elephant">
+        </div>
+        <nav id="topnav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header hidden-sm hidden-md hidden-lg pastel_lavender">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <div class="navbar-brand" href="#"><span class="navbar_heading">Rebecca & Tom</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="navbar_heading fr navbar_date">5/6/2017</span></div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="navbar collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="col-md-2 center_text pastel_lavender left_edge"><a class="center_text" title="Home" href="/"><h3>Home</h3></a></li>
+                        <li class="col-md-2 center_text pastel_green"><a class="center_text" title="Our Story" href="/our_story"><h3>Our Story</h3></a></li>
+                        <li class="dropdown col-md-2 center_text pastel_pink">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h3>Info <span class="caret"></span></h3></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/wedding_info"><h3>The Wedding</h3></a></li>
+                                <li><a href="/lodging_info"><h3>Lodging</h3></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown col-md-2 center_text pastel_yellow">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h3>RSVP <span class="caret"></span></h3></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/request_electronic_invitation"><h3>Request Electronic Invitation</h3></a></li>
+                                <li><a href="/regrets"><h3>Regrets</h3></a></li>
+                            </ul>
+                        </li>
+                        <li class="col-md-2 center_text pastel_blue "><a class="center_text" title="Pictures" href="/gallery"><h3>Pictures</h3></a></li>
+                        <li class="col-md-2 center_text pastel_orange right_edge"><a class="center_text" title="Registry" href="#"><h3>Registry</h3></a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        {% block body_container %} {% endblock %}
+    </div>
+</body>

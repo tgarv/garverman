@@ -1,8 +1,9 @@
 /* https://coolors.co/app/d3f8e2-e4c1f9-f694c1-ede7b1-a9def9 */
 
 .background {
-    background: url("../images/xv.png");
-    background-size: 10%;
+    /*background: url("../images/Capture.PNG");*/
+    background: url("https://www.colourbox.com/preview/8223315-pattern-with-waving-curls-similar-to-winter-frost.jpg");
+    background-size: 33%;
 }
 
 .main_image {
@@ -25,6 +26,10 @@
     float: left;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
 .center_text {
     text-align: center;
 }
@@ -40,21 +45,108 @@
     /*border: 1px solid gray;*/
 }
 
-.hero_wrapper {
-    /*height: 20vh;*/
-    text-align: left;
-    padding-left: 20%;
+.heading_container {
+    width: 82%;
 }
 
-.hero {
-    font-size: 5em;
+.heading, .navbar_heading {
     font-family: 'Dancing Script', cursive;
+    display: inline-block;
 }
 
+.navbar_heading {
+    color: #000;
+    padding-left: 15px;
+}
 
-.circle_container {
-    margin: 0 auto;
-    height: 20%;
+.heading {
+    font-size: 6em;
+    padding-left: 20px;
+    padding-right:20px;
+    margin-top: 5px;
+}
+
+.elephant {
+    margin-top: 15px;
+}
+
+.row {
+    padding-top: 20px;
+}
+
+@media (max-width: 1250px) {
+    .heading {
+        font-size: 4em;
+    }
+
+    .elephant {
+        margin-top: 0px;
+    }
+
+    .heading_container {
+        width: 79%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .heading {
+        font-size: 3em;
+    }
+
+    .elephant {
+        margin-top: -7px;
+    }
+
+    .heading_container {
+        width: 73%;
+    }
+
+    .navbar_heading {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 340px) {
+    .navbar_heading {
+        font-size: 1.4em;
+    }
+
+    .navbar_date {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 340px) {
+    .navbar_heading {
+        font-size: 1.6em;
+    }
+
+    .navbar_date {
+        font-size: 1.3em;
+    }
+}
+
+.nav > li > a {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.nav > li > a > h3 {
+    margin-top: 12.5px;
+}
+
+.fr {
+    float: right;
+}
+
+.navbar_heading.fr {
+    position: absolute;
+    right: 55px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 /* Colors */
@@ -78,6 +170,10 @@
     background-color: #A9DEF9;
 }
 
+.pastel_orange {
+    background-color: #FFB754;
+}
+
 .light_lavender {
     background-color: #E4C1F9;
 }
@@ -96,4 +192,127 @@
 
 .white_text {
     color: white;
+}
+
+.navbar-nav {
+    width: 100%;
+    margin: 0px;
+    background: gray;
+}
+
+.right_edge {
+    border-right-width: 1px;
+}
+
+.left_edge {
+    border-left-width: 1px;
+}
+
+.navbar-nav>li:not(.left_edge) {
+    border-left-width: 0px;
+}
+
+.navbar-nav>li {
+    box-shadow: inset 0 0 2.5em 0.1em #BBBBBB;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: #666;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: inherit;
+}
+
+.navbar-default {
+    background-color: inherit;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a, .navbar-default .navbar-nav>li>a {
+    color: #000;
+}
+
+.u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: none;
+}
+
+.navbar-default {
+    margin-bottom: 10px;
+}
+
+.navbar-toggle {
+    border: 0px;
+    padding-right: 15px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: inherit;
+}
+
+.no_link, .no_link:visited, .no_link:hover, .no_link:active, .no_link:link {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.no_link:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.no_link:visited {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.gallery_frame {
+    margin-top: 20px;
+}
+
+.sm-gallery-header {
+    display: none;
+}
+
+.blurb img {
+    width: 600px;
+}
+
+#topnav li {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.menu-trigger {
+    position: absolute;
+    top: 10px;
+}
+
+/*Make the navbar into a sticky-top navbar for mobile*/
+/*http://stackoverflow.com/a/36175204*/
+@media (max-width: 767px) {
+    body {
+        margin-top: 50px;
+    }
+    .navbar-default {
+        position: fixed;
+        z-index: 1030;
+        right: 0;
+        left: 0;
+        border-radius: 0;
+        top: 0;
+        border-width: 0 0 1px;
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .col-md-2 {
+        width: 50%;
+        float: left;
+    }
 }
