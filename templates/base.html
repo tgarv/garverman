@@ -23,8 +23,7 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
-    <div class="container">
+    <div class="sticky_top container">
         <div class="row hidden-xs">
             <img src="{{ url_for('static', filename='images/gray-elephant-hi.png') }}" width="100px" class="fl inline-block elephant">
             <div class="heading_container inline-block">
@@ -72,6 +71,9 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+    </div>
+    <div class="container topnav_spacing">
+
         {% block body_container %} {% endblock %}
     </div>
 </body>
