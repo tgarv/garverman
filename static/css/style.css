@@ -82,17 +82,6 @@ html,body {
     margin-top: 5px;
 }
 
-.sticky_top {
-    position: fixed;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: inherit;
-}
-
-.topnav_spacing {
-    padding-top: 200px;
-}
-
 .elephant {
     margin-top: 15px;
 }
@@ -131,11 +120,16 @@ html,body {
     .navbar_heading {
         padding-top: 15px;
     }
+
+    .nav > li > a > h3 {
+        font-size: 21px;
+    }
 }
 
 @media (max-width: 340px) {
     .navbar_heading {
         font-size: 1.4em;
+        background-color: blue;
     }
 
     .navbar_date {
@@ -230,6 +224,11 @@ html,body {
 .navbar-collapse {
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.navbar-brand {
+    padding: 0px;
+    padding-left:10px;
 }
 
 .right_edge {
@@ -343,8 +342,29 @@ html,body {
         padding-bottom: 20px;
     }
 
-    .col-md-2 {
+    .col-sm-2 {
         width: 50%;
         float: left;
+    }
+
+    .topnav_spacing {
+        padding-top: 20px;
+    }
+
+    .main_image {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .sticky_top {
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%, 0);
+        background-color: inherit;
+    }
+
+    .topnav_spacing {
+        padding-top: 200px;
     }
 }
