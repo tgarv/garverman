@@ -5,7 +5,7 @@ html,body {
 }
 
 .background {
-    background-color: #eeeeee;
+    background-color: #ffffff;
     /*background: url("../images/Capture.PNG");*/
     /*background: url("https://www.colourbox.com/preview/8223315-pattern-with-waving-curls-similar-to-winter-frost.jpg");*/
     /*background-size: 33%;*/
@@ -29,13 +29,19 @@ html,body {
 
 @media all and (orientation:portrait) {
 	.main_image {
-		content: url("../images/main_portrait.jpg");
+		content: url("https://photos.smugmug.com/Proposal/i-PhStjhH/0/X2/019_KS_IMG_5009_019-X2.jpg");
 	}
+	.hidden-portrait {
+        display: none;
+    }
 }
 @media all and (orientation:landscape) {
 	.main_image {
-		content: url("../images/main_landscape.jpg");
+		content: url("https://photos.smugmug.com/Proposal/i-FjmHJQQ/0/O/013_TB_IMG_0933-2_013.jpg");
 	}
+	.hidden-landscape {
+    display: none;
+    }
 }
 
 .fl {
@@ -197,6 +203,30 @@ html,body {
 
 .light_lavender {
     background-color: #E4C1F9;
+}
+
+.pastel_green_light {
+    background-color: rgba(200, 237, 166, 0.6);
+}
+
+.pastel_lavender_light {
+    background-color: rgba(228, 193, 249, 0.6);
+}
+
+.pastel_pink_light {
+    background-color: rgba(244, 161, 200, 0.6);
+}
+
+.pastel_yellow_light {
+    background-color: rgba(255, 255, 168, 0.6);
+}
+
+.pastel_blue_light {
+    background-color: rgba(169, 222, 249, 0.6);
+}
+
+.pastel_orange_light {
+    background-color: rgba(255, 183, 84, 0.6);
 }
 
 .ivory {
@@ -362,9 +392,79 @@ html,body {
         left: 50%;
         transform: translate(-50%, 0);
         background-color: inherit;
+        z-index: 1000
     }
 
     .topnav_spacing {
         padding-top: 200px;
     }
+}
+
+/* Content blocks */
+.content_block {
+    margin-top: 20px;
+    padding: 10px;
+    color: #000000;
+    font-family: 'Courgette', cursive;
+}
+
+.content_block>.subheading {
+    width: 100%;
+}
+.inner_content_block {
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .subheading {
+        font-size: 5em;
+    }
+    .info_section_header {
+        font-size: 3em;
+    }
+    .info_section_content {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .subheading {
+        font-size: 2.5em;
+    }
+    .info_section_header {
+        font-size: 2em;
+    }
+    .info_section_content {
+        font-size: 1.25em;
+    }
+}
+
+hr{
+
+}
+
+/* https://www.itsupportguides.com/tech-tips-tricks/how-to-offset-anchor-tag-link-using-css/ */
+/* Offset for anchor links to account for the sticky header */
+:target:before {
+    content:"";
+    display:block;
+    height:175px; /* fixed header height*/
+    margin:-175px 0 0; /* negative fixed header height */
+}
+
+.location_description {
+    font-size: large;
+}
+
+.hotel_logo {
+    height: 80px;
+    padding: 3px;
+}
+
+.registry_logo {
+    max-height: 100px;
+    max-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
