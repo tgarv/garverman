@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block body_container %}
-    <div class="image_contain u-max-full-width">
+    <div class="image_contain u-max-full-width topnav_spacing">
         <img class="main_image">
     </div>
     <a class="nav_anchor" name="wedding"></a>
@@ -32,7 +32,7 @@
                 <img class="js-expand-location-information" src="http://nyit.edu/files/deseversky/images/deseversky-logo.png">
             </div>
             <div class="inner_content_block pastel_lavender_light hidden js-location-information hidden-sm hidden-md hidden-lg center_text">
-                <h2 class="location_description justify">
+                <h2 class="location_description justify hyphenate">
                     We're getting married at the NYIT de Seversky Mansion, located in Glen Head, NY. Click <a target="_blank" class="nolink" jstcache="46" href="https://maps.google.com/maps?ll=40.809074,-73.614365&amp;z=14&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=7511891454804173835" jsaction="mouseup:placeCard.largerMap">"View larger map"</a> to get directions.
                 </h2>
                 <div>
@@ -58,12 +58,12 @@
         <div class="content_block pastel_lavender_light hidden js-location-information hidden-xs">
             <div class="row">
                 <iframe class="col-sm-6" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12079.439282779358!2d-73.6143647!3d40.8090741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x683f997a7ae5240b!2sNYIT+de+Seversky+Mansion!5e0!3m2!1sen!2sus!4v1468615781210" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <h2 class="location_description justify col-sm-6">
+                <h2 class="location_description justify hyphenate col-sm-6">
                     We're getting married at the NYIT de Seversky Mansion, located in Glen Head, NY. Click <a target="_blank" class="nolink" jstcache="46" href="https://maps.google.com/maps?ll=40.809074,-73.614365&amp;z=14&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=7511891454804173835" jsaction="mouseup:placeCard.largerMap">"View larger map"</a> to get directions.
                 </h2>
             </div>
             <div class="row">
-                <h2 class="location_description justify col-sm-6">Some stuff here too</h2>
+                <h2 class="location_description justify hyphenate col-sm-6">Some stuff here too</h2>
                 <iframe class="col-sm-6" style="right:0px;" src="https://garverman.smugmug.com/frame/slideshow?key=VbgdMd&autoStart=0&captions=0&navigation=1&playButton=0&speed=1&transition=none&transitionSpeed=1" frameborder="no" scrolling="no"></iframe>
             </div>
         </div>
@@ -73,21 +73,13 @@
     <div class="content_block pastel_yellow_light">
         <h2 class="content_block_heading center_text">RSVP</h2>
         <hr class="heading_line">
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <h2 class="js-toggle-electronic-invitation-form justify pointer">We haven't sent out invitations yet, but if you would like to request an electronic invitation instead of a traditional one, please click here.&nbsp;&nbsp;    <span class="caret"></span></h2>
-                <iframe class="hidden js-electronic-invitation-form" src="https://docs.google.com/forms/d/1uKIVlwSyHFMcOT8QqNN343FEwgEzrmLtPHonKg-ihq0/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>
-            <div class="col-sm-1"></div>
+        <div class="info_section_content">
+            <div class="js-toggle-electronic-invitation-form justify hyphenate pointer">We haven't sent out invitations yet, but if you would like to request an electronic invitation instead of a traditional one, please click here.&nbsp;&nbsp;    <span class="caret"></span></div>
+            <iframe class="hidden js-electronic-invitation-form" src="https://docs.google.com/forms/d/1uKIVlwSyHFMcOT8QqNN343FEwgEzrmLtPHonKg-ihq0/viewform?embedded=true" width="100%" height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
-        <div class="row">
-            <div class="col-sm-1"></div>
-            <div class="col-sm-10">
-                <h2 class="js-toggle-regrets-form justify pointer">If you already know you won't be able to attend, click here.&nbsp;&nbsp;<span class="caret"></span></h2>
-                <iframe class="hidden js-regrets-form" src="https://docs.google.com/forms/d/1jHsAPi3X6xq7gFixrTH9nckm1tPRmLnYr4MkAsSWYVM/viewform?embedded=true" width="100%" height="1010" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>
-            <div class="col-sm-1"></div>
+        <div class="info_section_content">
+            <div class="js-toggle-regrets-form justify hyphenate pointer">If you already know you won't be able to attend, click here.&nbsp;&nbsp;<span class="caret"></span></div>
+            <iframe class="hidden js-regrets-form" src="https://docs.google.com/forms/d/1jHsAPi3X6xq7gFixrTH9nckm1tPRmLnYr4MkAsSWYVM/viewform?embedded=true" width="100%" height="1010" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
         </div>
         <!--<iframe height="300" width="600" src="https://garvermantest.app.rsvpify.com/"></iframe>-->
     </div>
@@ -96,6 +88,11 @@
     <div class="content_block pastel_green_light">
         <h2 class="content_block_heading center_text">Our Story</h2>
         <hr class="heading_line">
+        <div class="info_section_content justify hyphenate">
+            <p>Lorem ipsum dolor sit amet, in veniam mucius ceteros per, ius odio disputationi an. Eu vel aperiri abhorreant, menandri splendide efficiantur ea vix, eum nobis facilis civibus ex. Ludus postulant repudiare ut vim, nam choro quando hendrerit ex. Et oblique perfecto instructior has, cu eum maluisset torquatos. Debet altera noluisse id has.</p>
+            <p>Cu mea blandit accommodare. In mea eros pertinax. At tota corpora deserunt his. Id sit viris salutandi. In minimum suavitate vituperata eam, nam everti impetus mandamus ea, at legere platonem pri. No est agam habeo habemus.</p>
+            <p>Saepe semper vim cu, id usu animal impetus repudiare. Quodsi persequeris accommodare ius at, et sale urbanitas consectetuer sea. Mei et denique iracundia, no nostro delectus pri. Ullum tollit vis te. Est tota reprehendunt ut, id ceteros salutandi pro.</p>
+        </div>
     </div>
     <hr>
     <a class="nav_anchor" name="registry"></a>

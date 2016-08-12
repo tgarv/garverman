@@ -4,21 +4,53 @@ html,body {
     height: 100%;
 }
 
-@media (min-width: 1400px) {
-    .container{
-        width: 1300px;
-    }
-}
+/*@media (min-width: 1400px) {*/
+/*    .container{*/
+/*        width: 1300px;*/
+/*    }*/
+/*}*/
 
 
 .background {
-    background-color: #ffffff;
+    background-color: #eeeeee;
     /*background: url("../images/Capture.PNG");*/
     /*background: url("https://www.colourbox.com/preview/8223315-pattern-with-waving-curls-similar-to-winter-frost.jpg");*/
     /*background-size: 33%;*/
 /*    background-color: #f2e3fa;*/
 /*background-image: url("http://www.transparenttextures.com/patterns/light-grey-floral-motif.png");*/
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.left_gutter, .right_gutter {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 300px;
+    background:#eeeeee;
+}
+
+/* Child div wider than parent, b ut with viewport-relative padding on the edges. Set this div's background to white, and the page background to gray */
+.content_padding {
+    position: relative;
+    background: white;
+    height: 100%;
+    margin-left: -6vw;
+    margin-right: -6vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+
+.left_gutter {
+    left: 0px;
+}
+
+.right_gutter {
+    right: 0px;
+}
+
+.white {
+    background: #ffffff;
 }
 
 .main_image {
@@ -418,11 +450,11 @@ h3 {
 /* Content blocks */
 .content_block {
     margin-top: 20px;
-    padding: 10px 60px 10px 60px;
     color: #000000;
     -webkit-box-shadow: 0 0 10px 2px #999;
     -moz-box-shadow: 0 0 10px 2px #999;
     box-shadow: 0 0 10px 2px #999;
+    /*text-size: 1em;*/
 }
 .content_block>.row {
     padding-top: 0px;
@@ -454,6 +486,11 @@ h3 {
     }
     .info_section_content {
         font-size: 2em;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    .content_block {
+        padding: 10px 60px 10px 60px;
     }
 }
 
@@ -466,6 +503,11 @@ h3 {
     }
     .info_section_content {
         font-size: 1.25em;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .content_block {
+        padding: 10px 30px 10px 30px;
     }
 }
 
@@ -492,6 +534,8 @@ h3 {
 
 .justify {
     text-align: justify;
+    text-justify: distribute;
+    hyphens: auto;
 }
 
 .pointer {
