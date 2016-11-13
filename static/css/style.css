@@ -4,49 +4,20 @@ html,body {
     height: 100%;
 }
 
-/*@media (min-width: 1400px) {*/
-/*    .container{*/
-/*        width: 1300px;*/
-/*    }*/
-/*}*/
-
 
 .background {
-    background-color: #eeeeee;
-    /*background: url("../images/Capture.PNG");*/
-    /*background: url("https://www.colourbox.com/preview/8223315-pattern-with-waving-curls-similar-to-winter-frost.jpg");*/
-    /*background-size: 33%;*/
-/*    background-color: #f2e3fa;*/
-/*background-image: url("http://www.transparenttextures.com/patterns/light-grey-floral-motif.png");*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
-
-.left_gutter, .right_gutter {
-    position: fixed;
-    top: 0px;
-    bottom: 0px;
-    width: 300px;
-    background:#eeeeee;
+    /*background-color: rgba(228, 193, 249, 0.7);*/
 }
 
 /* Child div wider than parent, b ut with viewport-relative padding on the edges. Set this div's background to white, and the page background to gray */
 .content_padding {
     position: relative;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     height: 100%;
     margin-left: -6vw;
     margin-right: -6vw;
     padding-left: 6vw;
     padding-right: 6vw;
-}
-
-
-.left_gutter {
-    left: 0px;
-}
-
-.right_gutter {
-    right: 0px;
 }
 
 .white {
@@ -63,7 +34,8 @@ html,body {
 
 .image_contain {
     height: 100%;
-    /*background-color: #CCCCCC*/
+    width: 90%;
+    margin: 0 auto;
 }
 
 @media all and (orientation:portrait) {
@@ -96,21 +68,13 @@ html,body {
 }
 
 .body_contain {
-    /*background: url(subtle_white_mini_waves.png);*/
     height: 100vh;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
-
-    /*border-radius: 20px;*/
-    /*border: 1px solid gray;*/
 }
 
-.heading_container {
-    width: 82%;
-}
-
-.heading, .navbar_heading {
+.heading, .heading_date, .navbar_heading {
     font-family: 'Dancing Script', cursive;
     display: inline-block;
 }
@@ -127,12 +91,16 @@ html,body {
     margin-top: 5px;
 }
 
-.elephant {
-    margin-top: 15px;
+.heading_date {
+    font-size: 4em;
 }
 
-.row {
-    padding-top: 20px;
+.heading_container {
+    width: 100%;
+}
+
+.elephant {
+    margin-top: 15px;
 }
 
 @media (max-width: 1250px) {
@@ -143,10 +111,6 @@ html,body {
     .elephant {
         margin-top: 0px;
     }
-
-    .heading_container {
-        width: 79%;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -156,10 +120,6 @@ html,body {
 
     .elephant {
         margin-top: -7px;
-    }
-
-    .heading_container {
-        width: 73%;
     }
 
     .navbar_heading {
@@ -201,6 +161,10 @@ html,body {
     margin-top: 12.5px;
 }
 
+.nav > li {
+    background-color: #FFFFFF
+}
+
 .fr {
     float: right;
 }
@@ -221,7 +185,7 @@ html,body {
 }
 
 .pastel_lavender {
-    background-color: #E4C1F9;
+    background-color: rgba(228, 193, 249, 0.7);
 }
 
 .pastel_pink {
@@ -240,32 +204,28 @@ html,body {
     background-color: #FFB754;
 }
 
-.light_lavender {
-    background-color: #E4C1F9;
-}
-
 .pastel_green_light {
-    background-color: rgba(200, 237, 166, 0.6);
+    background-color: #e5f6d5;
 }
 
 .pastel_lavender_light {
-    background-color: rgba(228, 193, 249, 0.6);
+    background-color: #ebd1fa;
 }
 
 .pastel_pink_light {
-    background-color: rgba(244, 161, 200, 0.6);
+    background-color: #fad1e4;
 }
 
 .pastel_yellow_light {
-    background-color: rgba(255, 255, 168, 0.6);
+    background-color: #ffffcc;
 }
 
 .pastel_blue_light {
-    background-color: rgba(169, 222, 249, 0.6);
+    background-color: #cfedfc;
 }
 
 .pastel_orange_light {
-    background-color: rgba(255, 183, 84, 0.6);
+    background-color: #ffd79e;
 }
 
 .ivory {
@@ -287,6 +247,7 @@ html,body {
 .navbar-nav {
     width: 100%;
     margin: 0px;
+    font-family: 'Dancing Script', cursive;
 }
 
 .navbar-collapse {
@@ -416,12 +377,17 @@ html,body {
     }
 
     .topnav_spacing {
-        padding-top: 20px;
+        padding-top: 120px;
     }
 
     .main_image {
         width: 100%;
     }
+
+    .content_block_heading {
+        font-size: 36px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -434,13 +400,17 @@ html,body {
     }
 
     .topnav_spacing {
-        padding-top: 200px;
+        padding-top: 120px;
+    }
+
+    .content_block_heading {
+        font-size: 42px;
     }
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-weight: 500;
 }
 
 h3 {
@@ -449,12 +419,8 @@ h3 {
 
 /* Content blocks */
 .content_block {
-    margin-top: 20px;
     color: #000000;
-    -webkit-box-shadow: 0 0 10px 2px #999;
-    -moz-box-shadow: 0 0 10px 2px #999;
-    box-shadow: 0 0 10px 2px #999;
-    /*text-size: 1em;*/
+    padding-top: 20px;
 }
 .content_block>.row {
     padding-top: 0px;
@@ -477,37 +443,54 @@ h3 {
     margin: 5px;
 }
 
+.info_section_content {
+    font-size: 18px;
+}
+
+.info_section_header {
+    font-size: 27px;
+}
+
+.rsvp_link {
+    font-family: 'Dancing Script', cursive;
+}
+
 @media (min-width: 768px) {
-    .content_block_heading {
-        font-size: 5em;
-    }
-    .info_section_header {
-        font-size: 3em;
-    }
-    .info_section_content {
-        font-size: 2em;
-        padding-left:30px;
-        padding-right:30px;
-    }
     .content_block {
-        padding: 10px 60px 10px 60px;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .registry_logo {
+        width: 42%;
+        padding: 15px;
+    }
+
+    .rsvp_link {
+        font-size: 48px;
     }
 }
 
 @media (max-width: 768px) {
-    .content_block_heading {
-        font-size: 2.5em;
-    }
-    .info_section_header {
-        font-size: 2em;
-    }
-    .info_section_content {
-        font-size: 1.25em;
-        padding-left:20px;
-        padding-right:20px;
-    }
     .content_block {
-        padding: 10px 30px 10px 30px;
+        width: 100%;
+    }
+
+    .registry_logo {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .rsvp_link {
+        font-size: 36px;
+    }
+
+    .rsvp_row {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
@@ -518,18 +501,6 @@ h3 {
     display:block;
     height:175px; /* fixed header height*/
     margin:-175px 0 0; /* negative fixed header height */
-}
-
-.hotel_logo {
-    height: 80px;
-    padding: 3px;
-}
-
-.registry_logo {
-    max-height: 100px;
-    max-width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .justify {
@@ -547,8 +518,8 @@ h3 {
 ---------------------------------------------------------------------- */
 
 /* The button */
-.addeventatc 							{width:180px;display:inline-block;position:relative;text-align:center;background:#AC4AD6;cursor:pointer;font-family:Roboto,"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;color:#fff!important;font-size:15px;font-weight:300;text-decoration:none;padding:12px 20px 12px 15px;}
-.addeventatc:hover 						{color:#fff;font-size:15px;text-decoration:none;background-color:#8B3CAD;}
+.addeventatc 							{width:180px;display:inline-block;position:relative;text-align:center;background:#bc8ae2;cursor:pointer;font-family:Roboto,"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;color:#fff!important;font-size:15px;font-weight:300;text-decoration:none;padding:12px 20px 12px 15px;}
+.addeventatc:hover 						{color:#fff;font-size:15px;text-decoration:none;background-color:#bc8ae2;}
 .addeventatc:active 					{top:1px;}
 .addeventatc .arrow 					{width:15px;height:10px;position:absolute;top:50%;right:15px;margin-top:-5px;background:url(../gfx/icon-arrow-t1.png) no-repeat;}
 .addeventatc-selected 					{background-color:#8B3CAD;}
@@ -570,3 +541,135 @@ h3 {
 .addeventatc_dropdown .copyx 			{height:21px;display:block;position:relative;cursor:default;}
 .addeventatc_dropdown .brx 				{height:1px;overflow:hidden;background:#e0e0e0;position:absolute;z-index:100;left:10px;right:10px;top:9px;}
 .addeventatc_icon {display: none;}
+
+.side_elephant_container {
+    width: 200px;
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    /*background-color: #FFFFFF;*/
+}
+
+.side_elephant_container_right {
+    width: 200px;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    /*background-color: #FFFFFF;*/
+}
+
+.side_elephant {
+    height:200px;
+}
+
+.side_elephant_label_left,.side_elephant_label_right {
+    color: #FFFFFF;
+    position: relative;
+    font-size: 1.6em;
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar_elephant {
+    position: relative;
+    top: -3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.full_height {
+    min-height: 100vh;
+}
+
+.bottom_left_flowers {
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    display: inline-block;
+    max-height: 800px;
+}
+
+.mirror {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.bottom_right_flowers {
+    position: fixed;
+    bottom:0px;
+    right:0px;
+    display: inline-block;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    max-height: 800px;
+}
+
+@media (min-width: 768px) {
+    .time_block {
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    #clock {
+        margin-top: 20px;
+    }
+    .underline {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 768px) {
+    .time_block {
+        width: 75px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    .bottom_right_flowers, .bottom_left_flowers {
+        width: 30em;
+    }
+
+    .underline {
+        font-weight: bold;
+    }
+}
+
+.time_block {
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    font-weight:800;
+}
+.time_block > .inner {
+    /*background-color: rgba(180,180,180,0.9);*/
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.days, .hours, .minutes, .seconds {
+    font-family: 'Dancing Script', cursive;
+}
+
+.rebecca_purple {
+    color: #663399;
+}
+
+.attire_icon {
+    width: 150px;
+}
+
+.rings_image {
+    width: 300px;
+    padding-top: 20px;
+}

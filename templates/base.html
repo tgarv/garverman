@@ -33,63 +33,118 @@
     <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 
     <!-- Latest compiled and minified JavaScript -->
-    <div class="sticky_top container">
+    <div class="container">
         <div class="content_padding">
             <div class="row hidden-xs">
-                <img src="{{ url_for('static', filename='images/gray-elephant-hi.png') }}" width="100px" class="fl inline-block elephant">
-                <div class="heading_container inline-block">
-                    <h2 class="heading"><a class="no_link" href="/">Rebecca & Tom</a></h2>
-                    <h2 class="heading fr">May 6, 2017</h2>
+                <div class="heading_container inline-block center_text">
+                    <div><h2 class="heading"><a class="no_link" href="/">Rebecca & Tom</a></h2></div>
+                    <div class="heading_date"><a class="no_link" href="/">5♥6♥17</a></div>
                 </div>
-                <img src="{{ url_for('static', filename='images/elephant-left.png') }}" width="100px" class="fr inline-block elephant">
             </div>
-            <nav id="topnav" class="navbar navbar-default">
+            <nav id="topnav" class="navbar navbar-default visible-xs">
                 <div class="container-fluid">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header hidden-sm hidden-md hidden-lg pastel_lavender">
+                     <!--Brand and toggle get grouped for better mobile display-->
+                    <div class="navbar-header hidden-md hidden-lg pastel_lavender">
                       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <div class="navbar-brand" href="#"><span class="navbar_heading">Rebecca & Tom</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="navbar_heading fr navbar_date">5/6/2017</span></div>
+                      <div class="navbar-brand" href="#"><span class="navbar_heading">Rebecca & Tom</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="navbar_heading fr navbar_date">5♥&#xFE0E;6♥&#xFE0E;17</span></div>
                     </div>
-                    <!-- Collect the nav links, forms, and other content for toggling -->
+                     <!--Collect the nav links, forms, and other content for toggling-->
                     <div class="navbar collapse navbar-collapse" id="navbar">
                         <ul class="nav navbar-nav">
-                            <li class="col-sm-2 center_text pastel_lavender left_edge"><a class="center_text" title="Home" href="/#"><h3>Home</h3></a></li>
-                            <li class="col-sm-2 center_text pastel_pink"><a class="center_text" title="Wedding Info" href="/#wedding"><h3>Wedding Info</h3></a></li>
-                            <li class="col-sm-2 center_text pastel_yellow "><a class="center_text" title="RSVP" href="/#rsvp"><h3>RSVP</h3></a></li>
-                            <li class="col-sm-2 center_text pastel_green"><a class="center_text" title="Our Story" href="/#our_story"><h3>Our Story</h3></a></li>
-                            <li class="col-sm-2 center_text pastel_orange right_edge"><a class="center_text" title="Registry" href="/#registry"><h3>Registry</h3></a></li>
-                            <li class="col-sm-2 center_text pastel_blue "><a class="center_text" title="Pictures" href="/#gallery"><h3>Pictures</h3></a></li>
-                            <!--<li class="dropdown col-sm-2 center_text pastel_pink">-->
-                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h3>Info <span class="caret"></span></h3></a>-->
-                                <!--<ul class="dropdown-menu">-->
-                                <!--    <li><a href="/#wedding"><h3>The Wedding</h3></a></li>-->
-                                <!--    <li><a href="/lodging_info"><h3>Lodging</h3></a></li>-->
-                                <!--</ul>-->
-                            <!--</li>-->
-                            <!--<li class="dropdown col-sm-2 center_text pastel_yellow">-->
-                            <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h3>RSVP <span class="caret"></span></h3></a>-->
-                            <!--    <ul class="dropdown-menu">-->
-                            <!--        <li><a href="/request_electronic_invitation"><h3>Request Electronic Invitation</h3></a></li>-->
-                            <!--        <li><a href="/regrets"><h3>Regrets</h3></a></li>-->
-                            <!--    </ul>-->
-                            <!--</li>-->
+                            <li class="col-sm-2  left_edge">
+                                <a class="center_text" title="Home" href="/#">
+                                    <!--<img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="30px" class="fl inline-block navbar_elephant">-->
+                                    <h3>Home</h3>
+                                </a>
+                            </li>
+                            <li class="col-sm-2 center_text">
+                                <a class="center_text" title="Wedding Info" href="/wedding">
+                                    <h3>Wedding Info</h3>
+                                    <!--<img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="30px" class="fr inline-block navbar_elephant mirror">-->
+                                </a>
+                            </li>
+                            <li class="col-sm-2  ">
+                                <a class="center_text" title="RSVP" href="/rsvp">
+                                    <!--<img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="30px" class="fl inline-block navbar_elephant">-->
+                                    <h3>RSVP</h3>
+                                </a>
+                            </li>
+                            <li class="col-sm-2 center_text">
+                                <a class="center_text" title="Our Story" href="/our_story">
+                                    <h3>Our Story</h3>
+                                    <!--<img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="30px" class="fr inline-block navbar_elephant mirror">-->
+                                </a>
+                            </li>
+                            <li class="col-sm-2 right_edge">
+                                <a class="center_text" title="Registry" href="/registry">
+                                    <!--<img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="30px" class="fl inline-block navbar_elephant">-->
+                                    <h3>Registry</h3>
+                                </a>
+                            </li>
+                            <li class="col-sm-2 center_text ">
+                                <a class="center_text" title="Pictures" href="/gallery">
+                                    <h3>Pictures</h3>
+                                    <!--<img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="30px" class="fr inline-block navbar_elephant mirror">-->
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <!-- /.navbar-collapse -->
+                     <!--/.navbar-collapse-->
                 </div>
-                <!-- /.container-fluid -->
+                 <!--/.container-fluid-->
             </nav>
         </div>
     </div>
+    <img class="bottom_right_flowers" src="{{ url_for('static', filename='images/floral-background.png') }}">
+    <img class="bottom_left_flowers" src="{{ url_for('static', filename='images/floral-background.png') }}">
     <div class="container main_container">
-        <div class="content_padding">
-
+        <div class="content_padding full_height">
+            <div class="side_elephant_container hidden-sm hidden-xs">
+                <a href="/" class="no_link">
+                    <div class="side_elephant">
+                        <img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="190px" class="fl inline-block">
+                        <span class="side_elephant_label_left" style="top: -75px;left: 35px;">Home</span>
+                    </div>
+                </a>
+                <a href="/wedding" class="no_link">
+                    <div class="side_elephant">
+                        <img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="190px" class="fl inline-block">
+                        <span class="side_elephant_label_left" style="top: -90px;left: 26px;">Wedding<br>Info</span>
+                    </div>
+                </a>
+                <a href="/rsvp" class="no_link">
+                    <div class="side_elephant">
+                        <img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="190px" class="fl inline-block">
+                        <span class="side_elephant_label_left" style="top: -75px;left: 40px;">RSVP</span>
+                    </div>
+                </a>
+            </div>
             {% block body_container %} {% endblock %}
+            <div class="side_elephant_container_right fr hidden-sm hidden-xs">
+                <a href="/our_story" class="no_link">
+                    <div class="side_elephant">
+                        <img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="190px" class="fr inline-block mirror">
+                        <span class="side_elephant_label_right" style="top: -97px;left: 108px;">Our<br>Story</span>
+                    </div>
+                </a>
+                <a href="/registry" class="no_link">
+                    <div class="side_elephant">
+                        <img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="190px" class="fr inline-block mirror">
+                        <span class="side_elephant_label_right" style="top: -75px;left: 90px;">Registry</span>
+                    </div>
+                </a>
+                <a href="/gallery" class="no_link">
+                    <div class="side_elephant">
+                        <img src="{{ url_for('static', filename='images/elephant_new.png') }}" width="190px" class="fr inline-block mirror">
+                        <span class="side_elephant_label_right" style="top: -75px;left: 90px;">Pictures</span>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </body>

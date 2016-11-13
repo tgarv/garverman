@@ -36,14 +36,14 @@ def gallery():
     return render_template('gallery.html', local_files=local_files)
 
 
-@app.route('/wedding_info')
+@app.route('/wedding')
 def wedding_info():
-    return render_template('base.html', local_files=local_files)
+    return render_template('wedding_info.html', local_files=local_files)
 
 
-@app.route('/lodging_info')
-def lodging_info():
-    return render_template('base.html', local_files=local_files)
+@app.route('/registry')
+def registry():
+    return render_template('registry.html', local_files=local_files)
 
 
 if __name__ == '__main__':

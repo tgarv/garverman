@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% block body_container %}
+<div class="content_block topnav_spacing">
+    <div class="hidden-xs">
+        <div class="row">
+            <!--<img src="http://nyit.edu/files/deseversky/images/deseversky-logo.png">-->
+            <h1 class="content_block_heading center_text">Wedding Information</h1>
+            <hr class="heading_line">
+            <!--<p class="icon">&#128197;</p>-->
+            <!--<p class="icon">&#128338;</p>-->
+            <!--<p class="icon">&#128716;</p>-->
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 center_text">
+                <img class="rings_image" src="{{ url_for('static', filename='images/wedding_rings.png') }}">
+            </div>
+            <div class="col-sm-5 center_text">
+                <br>
+                <h2 class="info_section_header">Come Celebrate with Us</h2>
+                <div>
+                    <p class="info_section_content">5:30pm</p>
+                    <p class="info_section_content">on</p>
+                    <p class="info_section_content">May 6, 2017</p>
+                </div>
+                <div title="Add to Calendar" class="addeventatc">
+                    Add to Calendar<span class="arrow"></span>
+                    <span class="start">05/06/2017 05:30 PM</span>
+                    <span class="end">05/06/2017 11:00 PM</span>
+                    <span class="timezone">America/New_York</span>
+                    <span class="title">Rebecca and Tom's Wedding</span>
+                    <span class="description">Rebecca and Tom's Wedding</span>
+                    <span class="location">NYIT de Seversky Mansion</span>
+                    <span class="organizer_email">garverman1@gmail.com</span>
+                    <span class="all_day_event">false</span>
+                    <span class="date_format">MM/DD/YYYY</span>
+                    <span class="client">aEqQAlueyzkKeuOXzmHc20175</span>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 center_text">
+                <br><br><br><br>
+                <h2 class="info_section_header">Ceremony & Reception Location</h2>
+                <p class="info_section_content justify">We're getting married at the <a href="http://www.nyit.edu/deseversky" target="_blank">NYIT De Seversky Mansion</a> in Old Westbury, NY.</p>
+                <p class="info_section_content"><a target="_blank" href="https://maps.google.com/maps?ll=40.809074,-73.614365&amp;z=14&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=7511891454804173835">Click here for directions</a></p>
+            </div>
+            <div class="col-sm-5 center_text hidden-xs">
+                <br>
+                <iframe src="https://garverman.smugmug.com/frame/slideshow?key=VbgdMd&autoStart=1&captions=0&navigation=1&playButton=0&speed=5&transition=fade&transitionSpeed=1" width="360" height="320" frameborder="no" scrolling="no"></iframe>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 center_text">
+                <br>
+                <img class="attire_icon fl" src="{{ url_for('static', filename='images/tuxedo_icon.png') }}">
+                <img class="attire_icon fr" src="{{ url_for('static', filename='images/dress_icon.png') }}">
+            </div>
+            <div class="col-sm-5 center_text">
+                <h2 class="info_section_header">Attire</h2>
+                <p class="info_section_content justify">The dress code for the wedding is Black Tie Optional.</p>
+                <p class="info_section_content justify">Not sure what that means? <a target="_blank" href="https://www.theknot.com/content/what-to-wear-formal-black-tie-optional-black-tie-invited">Click here for a description.</a></p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 center_text">
+                <br><br><br><br>
+                <h2 class="info_section_header">Accomodations</h2>
+                <p class="info_section_content justify">Check back soon for more details about discounted room blocks at nearby hotels.</p>
+            </div>
+            <div class="col-sm-5 center_text hidden-xs">
+
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+
+    <div class="center_text hidden-sm hidden-md hidden-lg">
+        <h1 class="content_block_heading center_text">Wedding Information</h1>
+        <hr class="heading_line">
+        <div>
+            <h2 class="info_section_header">Come Celebrate with Us</h2>
+            <p class="info_section_content">5:30pm on May 6, 2017 </p>
+            <div title="Add to Calendar" class="addeventatc">
+                Add to Calendar<span class="arrow"></span>
+                <span class="start">08/26/2016 05:30 PM</span>
+                <span class="end">08/26/2016 11:00 PM</span>
+                <span class="timezone">America/New_York</span>
+                <span class="title">Rebecca and Tom's Wedding</span>
+                <span class="description">Rebecca and Tom's Wedding</span>
+                <span class="location">NYIT de Seversky Mansion</span>
+                <span class="organizer_email">garverman1@gmail.com</span>
+                <span class="all_day_event">false</span>
+                <span class="date_format">MM/DD/YYYY</span>
+                <span class="client">aEqQAlueyzkKeuOXzmHc20175</span>
+            </div>
+        </div>
+        <br>
+        <div>
+            <h2 class="info_section_header">Ceremony & Reception Location</h2>
+            <p class="info_section_content justify">We're getting married at the <a href="http://www.nyit.edu/deseversky" target="_blank">NYIT De Seversky Mansion</a> in Old Westbury, NY.</p>
+            <p class="info_section_content"><a target="_blank" href="https://maps.google.com/maps?ll=40.809074,-73.614365&amp;z=14&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=7511891454804173835">Click here for directions</a></p>
+        </div>
+        <br>
+        <div>
+            <h2 class="info_section_header">Attire</h2>
+            <p class="info_section_content justify">The dress code for the wedding is Black Tie Optional.</p>
+            <p class="info_section_content justify">Not sure what that means? <a target="_blank" href="https://www.theknot.com/content/what-to-wear-formal-black-tie-optional-black-tie-invited">Click here for a description.</a></p>
+        </div>
+        <br>
+        <div>
+            <h2 class="info_section_header">Accomodations</h2>
+            <p class="info_section_content justify">Check back soon for more details about discounted room blocks at nearby hotels.</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+</div>
+{% endblock %}
