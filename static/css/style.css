@@ -780,3 +780,8 @@ h3 {
 	25% { transform: translateZ(-250px) rotateX(89deg); opacity: 1; animation-timing-function: ease-in;}
 	100% { transform: translateZ(0) rotateX(0deg); opacity: 1; color: black;}
 }
+
+.hotel_image {
+    width: 100%;
+    margin: 10px;
+}
