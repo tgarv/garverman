@@ -10,14 +10,16 @@ html,body {
 }
 
 /* Child div wider than parent, b ut with viewport-relative padding on the edges. Set this div's background to white, and the page background to gray */
-.content_padding {
-    position: relative;
-    background: rgba(255, 255, 255, 0.9);
-    height: 100%;
-    margin-left: -6vw;
-    margin-right: -6vw;
-    padding-left: 6vw;
-    padding-right: 6vw;
+@media (min-width: 992px) {
+    .content_padding {
+        position: relative;
+        background: rgba(255, 255, 255, 0.9);
+        height: 100%;
+        margin-left: -6vw;
+        margin-right: -6vw;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
 }
 
 .white {
@@ -475,7 +477,7 @@ h3 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .content_block {
         width: 100%;
     }
@@ -629,7 +631,7 @@ h3 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .time_block {
         width: 75px;
         height: 50px;
@@ -784,4 +786,24 @@ h3 {
 .hotel_image {
     width: 100%;
     margin: 10px;
+}
+
+/* Set the navbar to collapse at small size (the default is xs) http://stackoverflow.com/questions/18192082/bootstrap-3-navbar-collapse */
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
 }
