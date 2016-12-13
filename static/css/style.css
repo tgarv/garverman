@@ -41,19 +41,13 @@ html,body {
 }
 
 @media all and (orientation:portrait) {
-	.main_image {
-		content: url("https://photos.smugmug.com/Proposal/i-PhStjhH/0/X2/019_KS_IMG_5009_019-X2.jpg");
-	}
 	.hidden-portrait {
         display: none;
     }
 }
 @media all and (orientation:landscape) {
-	.main_image {
-		content: url("https://photos.smugmug.com/Proposal/i-FjmHJQQ/0/O/013_TB_IMG_0933-2_013.jpg");
-	}
 	.hidden-landscape {
-    display: none;
+        display: none;
     }
 }
 
