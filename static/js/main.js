@@ -51,6 +51,6 @@ function initializeClock(id, endtime) {
   }
 }
 
-var deadline = new Date(1494106200000);
+var deadline = new Date(1494108000000);
 initializeClock('clock', deadline);
 });
